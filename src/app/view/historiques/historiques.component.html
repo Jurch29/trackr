@@ -1,0 +1,29 @@
+
+<div class="histo">
+
+    <div class="title"> Historiques </div>
+
+    <div class="menu">
+
+        <mat-card>
+                <mat-form-field class="mff1">
+                        <input matInput [matDatepicker]="dp" placeholder="Date">
+                        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                        <mat-datepicker #dp></mat-datepicker>
+                </mat-form-field>
+
+                <p>au</p> 
+
+                <mat-form-field class="mff2">
+                        <input matInput [matDatepicker]="dp2" placeholder="Date">
+                        <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+                        <mat-datepicker #dp2></mat-datepicker>
+                </mat-form-field>
+        
+        </mat-card>
+
+        <raclagestat [Histomode]="true"></raclagestat>
+
+    </div>
+
+</div>

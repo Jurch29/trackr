@@ -1,0 +1,52 @@
+<div class="compte">
+
+  <mat-card class="card1">
+      <H3>Nom de l'élevage</H3>
+      <p>Ce nom apparaîtra sur le menu glissant gauche de l'application.</p>
+      <mat-form-field>
+          <input matInput placeholder="Nom">
+      </mat-form-field>
+  </mat-card>
+
+  <mat-card class="card2">
+    <H3>Verrouillage de l'application</H3>
+    <p>En activant cette option, il vous sera demandé de mettre un mot de passe et de l'entrer à chaque début de session.</p>
+    <mat-slide-toggle color="primary"></mat-slide-toggle>
+  </mat-card>
+
+  <mat-card class="card3">
+    <H3>Langue</H3>
+    <p>Cette option vous propose de changer la langue affichée sur cette interface.</p>
+
+    <form [formGroup]="stateForm">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Langue" formControlName="stateGroup" required [matAutocomplete]="autoGroup"/>
+          <mat-autocomplete #autoGroup="matAutocomplete">
+            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+              <mat-option *ngFor="let name of group.names" [value]="name">
+                {{ name }}
+              </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field> 
+    </form> 
+
+  </mat-card>
+
+  <mat-card class="card4">
+    <H3>Numéro de téléphone</H3>
+    <p>En renseignant votre numéro de téléphone, vous pourrez recevoir des alertes par SMS sur votre mobile.</p>
+    <mat-form-field>
+      <input matInput [placeholder]="getPH(1)">
+  </mat-form-field>
+  </mat-card>
+
+  <mat-card class="card5">
+    <H3>Adresse mail</H3>
+    <p>En renseignant votre adresse mail, vous pourrez recevoir des alertes par mail sur votre boite mail.</p>
+    <mat-form-field>
+      <input matInput [placeholder]="getPH(2)">
+  </mat-form-field>
+  </mat-card>
+
+</div>

@@ -1,0 +1,37 @@
+mat-card
+{
+    margin-top: 15px;
+    width: 65vw;
+    overflow: visible;
+}
+
+h3
+{
+    position: relative;
+    bottom: 15px;
+}
+
+h4
+{
+    margin-top: 0;
+    color: rgb(99, 94, 94);
+}
+
+p
+{
+    color: gray;
+    position: relative;
+    bottom: 22px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.card6
+{
+    margin-bottom: 15px;
+}
+
+.firefoxMargeDown
+{
+    margin-bottom: 150px;
+}

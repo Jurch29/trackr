@@ -1,0 +1,32 @@
+mat-card
+{
+    margin-top: 15px;
+    width: 60vw;
+    overflow: visible;
+}
+
+.tabbord
+{
+    margin-top: 100px;
+}
+
+.title
+{
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    position: relative;
+    left: 20px;
+}
+
+mat-card.card7
+{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 950px)
+{
+    mat-card
+    {
+        width: 70vw;
+    }
+}

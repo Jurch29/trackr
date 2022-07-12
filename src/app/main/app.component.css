@@ -1,0 +1,285 @@
+
+.containerMatDrawer
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+ mat-sidenav-content
+{ 
+  overflow-x: hidden;
+} 
+
+.container
+{
+  display: flex;
+  justify-content: center;
+} 
+
+mat-sidenav 
+{
+     transition: all 0.6s ease-in-out;
+     /*manque quelque chose ?*/
+     /*https://stackoverflow.com/questions/51024196/angular-6-graphic-bug-on-opening-a-right-sidenav*/
+}
+
+.encart mat-card
+{
+    width: 270px;
+    padding: 0;
+    background-color: #CCCCCC;
+    height: 120px;
+} 
+
+.encart .switchSideBarLeft
+{
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(167, 167, 168);
+}
+
+.switchSideBarRigth
+{
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(167, 167, 168);
+}
+
+
+.rond
+{
+    position: absolute;
+    width: 50px;
+	height: 50px;
+	background: rgb(216, 213, 255);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid blue;
+    top: 10px;
+    left:15px;
+}
+
+.texterond
+{
+    position: absolute;
+    left: 9px;
+}
+
+.label
+{
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+.icon
+{
+    fill: black;
+    width: 24px;
+    height: 24px;
+}
+
+.active
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.icone-sideleft
+{
+    margin-top: 13px;
+}
+
+.icone-sideleft svg
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+.text-icon
+{
+    position: absolute;
+    top: 187px;
+    left: 50px;
+}
+
+.label svg
+{
+    position: absolute;
+    top: -3px;
+    left: 138px;
+}
+
+.RLhome
+{
+    position: absolute;
+    margin-top: 10px;
+}
+
+.icone-sideleft span
+{
+    position: absolute;
+    margin-top: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.champ
+{
+    height: 42px;
+    cursor: pointer;
+}
+
+.champ:hover
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.champcontenu
+{
+    position: absolute;
+    margin-top: -8px;
+}
+
+.version
+{
+    position: absolute;
+    font-style: italic;
+    margin-left: 25px; 
+    font-size: 9px;
+    bottom: 5px;
+    color: rgb(120, 116, 122);
+}
+
+.version svg
+{
+    position: absolute;
+    left: 83px;
+    bottom: -1px;
+}
+
+.margev
+{
+    margin-right: 15px;
+}
+
+.title
+{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color: gray;
+    font-style: italic;
+}
+
+.RobotListe
+{
+    margin-top: 46px;
+    margin-bottom: 77px;
+}
+
+.localisationR
+{
+    color: grey;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.description
+{
+    margin-left: 90px;
+    margin-top: -70px;
+    position: relative;
+    top: 10px;
+}
+
+.rondID
+{
+    width: 50px;
+	height: 50px;
+	background: rgb(230, 224, 224);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: -18px;
+    position: relative;
+    top: -5px;
+}
+
+.rondetat
+{
+    width: 15px;
+	height: 15px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 40px;
+    position: relative;
+    top: -5px;
+}
+
+.nameR
+{
+    margin-bottom: 2px;
+}
+
+.Robot
+{
+    margin-bottom: 10px;
+}
+
+.etat
+{
+    margin-left: 20px;
+    position: relative;
+    top: 9px;
+}
+
+.etat p
+{
+    margin-left: 15px;
+}
+
+.grisage:hover
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.grisage
+{
+    position: relative;
+    margin-top: 0px;
+    height: 65px;
+}
+
+.Rightside
+{
+  width: 270px;
+}
+
+.firefoxLCL
+{
+    font-size: 13px;
+}
+
+.firefoxVER
+{
+    font-size: 8px;
+}
+
+@media screen and (max-height: 500px)
+{
+
+} 
+

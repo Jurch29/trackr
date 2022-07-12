@@ -1,0 +1,25 @@
+<p class="title">
+  Modifier un robot :
+</p>
+
+<mat-form-field>
+  <input matInput placeholder="Nom">
+</mat-form-field>
+<br/>
+<mat-form-field>
+  <mat-select placeholder="Batiment">
+    <mat-option value="option"  *ngFor="let batiment of listbatiment; let i = index;">{{batiment}}</mat-option>
+  </mat-select>
+</mat-form-field>
+<p></p>
+<mat-form-field>
+  <mat-select placeholder="Salle">
+    <mat-option value="option"  *ngFor="let salle of listsalle; let i = index;">{{salle}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<p></p>
+
+<button mat-button (click)="validation()">Valider</button>
+<button mat-raised-button (click)="Delete()">Supprimer ce robot</button>

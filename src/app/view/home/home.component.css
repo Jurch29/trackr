@@ -1,0 +1,96 @@
+
+.tableau
+{
+  position: relative;
+  margin-top: 20px;
+  top: 65px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.title
+{
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    position: relative;
+    left: 20px;
+}
+
+.part1
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.part2
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.alert mat-card
+{
+    width: 250px;
+    height: 413px;
+    background-color: rgb(93, 112, 112);
+    margin-right: 120px;
+    padding: 0;
+}
+
+.alert p
+{
+    font-style: italic;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.part3, .part4
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.timeline1
+{
+    margin-right: 120px;
+}
+
+.firefoxHeightS4
+{
+    margin-bottom: 85px;
+}
+
+popuprobot
+{
+    width: 300px;
+    position: fixed;
+    right: 391px;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .alert mat-card
+    {
+        width: 220px;
+        height: 348px;
+        margin-right: 47px;
+    }
+    .title
+    {
+        left: 60px;
+    }
+    .timeline1
+    {
+        margin-right: 47px;
+    }
+}

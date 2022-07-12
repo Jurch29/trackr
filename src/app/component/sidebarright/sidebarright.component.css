@@ -1,0 +1,137 @@
+
+.mat-sidenav-container
+{
+    width: 500px;
+}
+
+ .mat-sidenav-content
+{
+    position: fixed;
+    background-color: white;
+    right: 0;
+    width: 270px;
+    top: 65px;
+    overflow-y: scroll;
+    min-height: 100%;
+    /* padding-left: 240px; */
+}
+
+.Robot
+{
+    margin-bottom: 10px;
+}
+
+.mat-sidenav
+{
+    z-index: 1;
+    display: block;
+    height: 100vh;
+}
+
+.title
+{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+.RobotListe
+{
+    margin-top: 46px;
+    margin-bottom: 77px;
+}
+
+.localisationR
+{
+    color: grey;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.description
+{
+    margin-left: 90px;
+    margin-top: -70px;
+    position: relative;
+    top: 10px;
+}
+
+.rondID
+{
+    width: 50px;
+	height: 50px;
+	background: rgb(230, 224, 224);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: -18px;
+    position: relative;
+    top: -5px;
+}
+
+.rondetat
+{
+    width: 15px;
+	height: 15px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 40px;
+    position: relative;
+    top: -5px;
+}
+
+.nameR
+{
+    margin-bottom: 2px;
+}
+
+.etat
+{
+    margin-left: 20px;
+    position: relative;
+    top: 9px;
+}
+
+.etat p
+{
+    margin-left: 15px;
+}
+
+popuprobot
+{display: none}
+
+.Robot:hover popuprobot
+{
+    display: block;
+    width: 300px;
+    position: relative;
+    right: 420px;
+    margin-bottom: -160px;
+}
+
+.firefoxLCL
+{
+    font-size: 13px;
+}
+
+.grisage:hover
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.grisage
+{
+    position: relative;
+    margin-top: 0px;
+    height: 65px;
+}
+
+@media screen and (max-height: 500px)
+{
+
+}

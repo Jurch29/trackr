@@ -1,0 +1,154 @@
+
+mat-card
+{
+    width: 270px;
+    padding: 0px;
+    margin: 0;
+}
+
+.mat-sidenav-content
+{
+    position: fixed;
+    background-color: white;
+    width: 270px;
+    top: 65px;
+}
+
+.mat-sidenav
+{
+    z-index: 1;
+    display: block;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* .encart mat-card
+{
+    width: 270px;
+    padding: 0;
+    background-color: #CCCCCC;
+    height: 120px;
+} */
+
+.rond
+{
+    position: absolute;
+    width: 50px;
+	height: 50px;
+	background: rgb(216, 213, 255);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid blue;
+    top: 10px;
+    left: 20px;
+}
+
+.texterond
+{
+    position: absolute;
+    left: 9px;
+}
+
+.label
+{
+    position: absolute;
+    top: 75px;
+    left: 50px;
+}
+
+.icon
+{
+    fill: black;
+    width: 24px;
+    height: 24px;
+}
+
+.active
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.icone-sideleft
+{
+    margin-top: 13px;
+}
+
+.icone-sideleft svg
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+.text-icon
+{
+    position: absolute;
+    top: 187px;
+    left: 50px;
+}
+
+.label svg
+{
+    position: absolute;
+    top: -3px;
+    left: 138px;
+}
+
+.RLhome
+{
+    position: absolute;
+    margin-top: 10px;
+}
+
+.icone-sideleft span
+{
+    position: absolute;
+    margin-top: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.champ
+{
+    height: 42px;
+    cursor: pointer;
+}
+
+.champ:hover
+{
+    background-color: rgba(212, 212, 212, 0.336);
+}
+
+.champcontenu
+{
+    position: absolute;
+    margin-top: -8px;
+}
+
+.version
+{
+    position: absolute;
+    font-style: italic;
+    margin-left: 25px; /*270-220 = 50/2 =25*/
+    font-size: 9px;
+    bottom: 68px;
+    color: rgb(120, 116, 122);
+}
+
+.version svg
+{
+    position: absolute;
+    left: 83px;
+    bottom: -1px;
+}
+
+.margev
+{
+    margin-right: 15px;
+}
+
+.firefoxVER
+{
+    font-size: 8px;
+}

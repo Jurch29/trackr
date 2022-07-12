@@ -1,0 +1,53 @@
+<p class="title">
+  Modifier un raclage :
+</p>
+
+<mat-form-field>
+  <mat-select placeholder="Batiment">
+    <mat-option value="option"  *ngFor="let batiment of listbatiment; let i = index;">{{batiment}}</mat-option>
+  </mat-select>
+</mat-form-field>
+<p></p>
+<mat-form-field>
+  <mat-select placeholder="Salle">
+    <mat-option value="option"  *ngFor="let salle of listsalle; let i = index;">{{salle}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="date" *ngIf="isperiodtodefine">
+
+  <p></p>
+  du : <mat-form-field class="mff1">
+    <input matInput [matDatepicker]="dp" placeholder="Date">
+    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+    <mat-datepicker #dp></mat-datepicker>
+  </mat-form-field>
+
+  au
+
+  <mat-form-field class="mff2">
+    <input matInput [matDatepicker]="dp2" placeholder="Date">
+    <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+    <mat-datepicker #dp2></mat-datepicker>
+  </mat-form-field>
+
+</div>
+
+<p></p>
+
+<mat-checkbox *ngIf="isperiodtodefine" (click)="switchperiodtodefine()">Cocher si période indéfinie</mat-checkbox>
+
+<mat-checkbox *ngIf="!isperiodtodefine" (click)="switchperiodtodefine()">Cocher pour définir une période</mat-checkbox>
+
+<p></p>
+
+<mat-form-field>
+  <mat-select placeholder="Nombre de raclage quotiden">
+    <mat-option value="option"  *ngFor="let nombre of nbraclage; let i = index;">{{nombre}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p></p>
+
+<button mat-button (click)="validation()">Valider</button>
+<button mat-raised-button (click)="Delete()">Supprimer ce raclage</button>

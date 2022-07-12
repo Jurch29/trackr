@@ -1,0 +1,12 @@
+.title
+{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button
+{
+    position: relative;
+    left: 70px;
+}

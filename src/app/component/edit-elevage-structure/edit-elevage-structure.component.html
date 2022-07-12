@@ -1,0 +1,22 @@
+
+<p class="title" *ngIf="id===1">
+    Modifier un site :
+</p>
+
+<p class="title" *ngIf="id===2">
+    Modifier un batiment :
+</p>
+
+<p class="title" *ngIf="id===3">
+    Modifier une salle :
+</p>
+  
+  <mat-form-field>
+    <input matInput placeholder="Nom">
+  </mat-form-field>
+  <br/>
+  
+  <p></p>
+  
+  <button mat-button (click)="validation()">Valider</button>
+  <button mat-raised-button (click)="Delete()">Supprimer ce site</button>

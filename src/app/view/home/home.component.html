@@ -1,0 +1,51 @@
+<div class="tableau">
+
+  <div class="title">
+    <p>Tableau de bord</p>
+  </div>
+
+   <div class="part1">
+
+      <robotdetailcard color="#43A047" texte="Robots en fonctionnement" [nombre]="nbrobotinactif"></robotdetailcard>
+      <robotdetailcard color="#F44336" texte="Robots en panne" [nombre]="nbrobotenpanne"></robotdetailcard>
+      <robotdetailcard color="#FF9800" texte="Robots inactifs" [nombre]="nbrobotinactif"></robotdetailcard>
+      <robotdetailcard color="#03A9F4" texte="Raclages effectués aujourd'hui" [nombre]="nbraclagedone"></robotdetailcard>
+
+   </div>
+
+   
+  <div class="part2">
+
+      <raclagestat></raclagestat>
+    
+  </div>
+
+  <div class="part3">
+
+      <div class="alert">
+          <mat-card>
+            <p>Alertes</p>
+            <div *ngFor="let a of listAlertes">
+              <alerte-item [niveau]="a.niveau" [titre]="a.titre" [description]="a.description" color="#FFF"></alerte-item>
+            </div>
+          </mat-card>
+        </div>
+
+    <div class="timeline1">
+      <raclagetimeline titre="Raclages en cours" color="#00B8D4" [raclages] = "RaclageEncoursInfos"></raclagetimeline>
+    </div>
+    <div class="timeline2">
+      <raclagetimeline titre="Prochains raclages" color="teal" [raclages] = "ProchainsRaclagesInfos"></raclagetimeline>
+    </div>
+  
+  </div>
+
+  <div class="part4" [ngClass]="{'firefoxHeightS4': Navigateur === 'Mozilla'}">
+
+          <carteelevage></carteelevage>
+
+  </div>
+
+  <popuprobot idrobottodisplay = "18" [ngStyle]="{'top': '200px'}"></popuprobot>
+
+</div>

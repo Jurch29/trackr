@@ -1,0 +1,175 @@
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+   <mat-sidenav-container class="containerMatDrawer" [hasBackdrop]="true">
+  
+      <mat-sidenav #drawerLeft class="LeftSide" mode="over" position="start">
+
+                    <div class="encart">
+
+                        <mat-card>                
+
+                            <!-- <div class="rond"><br/><div class="texterond">AAA</div></div>
+
+                            <div class="label">
+                                ---------{{Label}}---------
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                                </svg>
+
+                            </div> -->
+
+                        </mat-card>
+
+                    </div>
+
+                  <div class="icone-sideleft">
+
+                        <div class="champ Homediv" (click)="onClickNav('home')" [ngClass]="{'active': activeClass === '/home'}">
+                          <a class="RLhome">
+                            <svg class="icon" viewBox="0 0 24 24">
+                              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                              <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg><span>Accueil</span>
+                          </a>
+                        </div>
+
+                        <div class="champ Raclagesdiv" (click)="onClickNav('raclages')" [ngClass]="{'active': activeClass === '/raclages'}">
+                          <br/>
+                          <a class="champcontenu RLraclages">
+                            <svg class="icon" viewBox="0 0 24 24">
+                              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                              <path d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg><span>Raclages</span>
+                          </a>
+                        </div>
+
+                        <div class="champ statsdiv" (click)="onClickNav('historiques')" [ngClass]="{'active': activeClass === '/historiques'}">
+                          <br/>
+                          <a class="champcontenu RLhistorique">
+                            <svg class="icon" viewBox="0 0 24 24">
+                              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                              <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg><span>Historiques</span>
+                          </a>
+                        </div>
+
+                        <div class="champ paramdiv" (click)="onClickNav('parametres')" [ngClass]="{'active': activeClass === '/parametres'}">
+                          <br/>
+                          <a class="champcontenu RLparam">
+                            <svg class="icon" viewBox="0 0 20 20">
+                              <path fill="none" d="M0 0h20v20H0V0z"/>
+                              <path d="M15.95 10.78c.03-.25.05-.51.05-.78s-.02-.53-.06-.78l1.69-1.32c.15-.12.19-.34.1-.51l-1.6-2.77c-.1-.18-.31-.24-.49-.18l-1.99.8c-.42-.32-.86-.58-1.35-.78L12 2.34c-.03-.2-.2-.34-.4-.34H8.4c-.2 0-.36.14-.39.34l-.3 2.12c-.49.2-.94.47-1.35.78l-1.99-.8c-.18-.07-.39 0-.49.18l-1.6 2.77c-.1.18-.06.39.1.51l1.69 1.32c-.04.25-.07.52-.07.78s.02.53.06.78L2.37 12.1c-.15.12-.19.34-.1.51l1.6 2.77c.1.18.31.24.49.18l1.99-.8c.42.32.86.58 1.35.78l.3 2.12c.04.2.2.34.4.34h3.2c.2 0 .37-.14.39-.34l.3-2.12c.49-.2.94-.47 1.35-.78l1.99.8c.18.07.39 0 .49-.18l1.6-2.77c.1-.18.06-.39-.1-.51l-1.67-1.32zM10 13c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
+                            </svg><span>Parametres</span>
+                          </a>
+                        </div>
+
+                        <div class="champ aprdiv" (click)="onClickNav('about')" [ngClass]="{'active': activeClass === '/about'}">
+                          <br/>
+                          <a class="champcontenu RLapr">
+                            <svg class="icon" viewBox="0 0 24 24">
+                              <path d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                            </svg><span>A&nbsp;propos</span>
+                          </a>
+                        </div>
+
+                        <div class="champ aidesdiv" (click)="onClickNav('help')" [ngClass]="{'active': activeClass === '/help'}">
+                          <br/>
+                          <a class="champcontenu RLaides">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path fill="none" d="M0 0h24v24H0z"/>
+                                <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+                            </svg><span>Aides</span>
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="version" [ngClass]="{'firefoxVER': Navigateur === 'Mozilla'}">
+
+                            <span class="margev"> Trac'R Eleveur App - </span>
+                            <span> Socobati S.A.S.U.- version 1.0</span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 24 24" style="fill: rgb(120, 116, 122)">
+                                <defs>
+                                    <path id="a" d="M24 0v24H0V0h24z"/>
+                                </defs>
+                                <clipPath id="b">
+                                    <use xlink:href="#a" overflow="visible"/>
+                                </clipPath>
+                                <path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91 1.05.34 1.7.34c.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" clip-path="url(#b)"/>
+                            </svg>
+                    </div>
+
+      </mat-sidenav>
+
+      <mat-sidenav #drawerRight class="Rightside" mode="over" position="end">
+
+                       <div class="title">
+                          Robots
+                      </div>
+          
+                      <div class="RobotListe">
+          
+                          <span *ngFor="let robot of listeRobot; let i = index;">
+          
+                              <div [attr.id]="'divL-' + i" class="Robot" on-mouseover='getplacement($event)'>
+          
+                              <div class="grisage">
+                                  <div class="etat">
+                                      <div class="rondID"><p>{{robot.id}}</p></div>
+                                      <div class="rondetat" [ngStyle]="{background: getColor(robot.id)}"></div>
+                                  </div>
+          
+                                  <div class="description">
+                                      <p class="nameR">-----{{robot.name}}-----</p>
+                                      <p class="localisationR" [ngClass]="{'firefoxLCL': Navigateur === 'Mozilla'}">----{{robot.localisation}}----</p>
+                                  </div>
+                              </div>
+          
+                              </div>
+          
+                          </span>
+          
+                      </div>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+
+        <header>
+           <topbar (changeleftside)="sideBarLeftEvent($event);" (changerightside)="sideBarRightEvent($event);"></topbar>
+        </header>
+
+        <main>
+      
+          <div class="container" [ngStyle]="{width: getWidth()}">
+              <router-outlet></router-outlet>
+          </div>
+          <sidebarleft *ngIf="getwindowsize(1)"></sidebarleft> 
+
+          <sidebarright *ngIf="getwindowsize(2)"></sidebarright>
+
+        </main>
+      
+      </mat-sidenav-content>
+
+    </mat-sidenav-container> 
+  
+<!-- <mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="over">
+    Sidenav content
+  </mat-sidenav>
+  <mat-sidenav #right mode="over" position="end">
+    Sidenav content
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <header>
+      <topbar (changeleftside)="sideBarLeftEvent($event);" (changerightside)="sideBarRightEvent($event);"></topbar>
+   </header>
+    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+    <p><button mat-button (click)="right.toggle()">sid.toggle()</button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container> --> 

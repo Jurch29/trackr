@@ -1,0 +1,22 @@
+<div class="tabbord">
+
+        <div class="title"> A propos </div>
+    
+        <div class="menu">
+    
+                <nav mat-tab-nav-bar>
+                        <a mat-tab-link
+                           *ngFor="let link of navLinks"
+                           [routerLink]="link.link"
+                           routerLinkActive #rla="routerLinkActive"
+                           [active]="rla.isActive"
+                           (click)="activeLinkIndex = i">
+                          {{link.label}}
+                        </a>
+                </nav>
+        </div>
+</div>
+    
+<div class="aboutcontainer">
+       <router-outlet></router-outlet>
+</div>

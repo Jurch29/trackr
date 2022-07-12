@@ -1,0 +1,19 @@
+
+<mat-card [ngStyle]="{background: color}">
+    <div class="title" [ngClass]="{'firefoxTitleSize': Navigateur === 'Mozilla'}">{{titre}}</div>
+
+    <div class="container">
+        <div *ngFor="let i of raclages" class="container-boucle">
+
+                <div class="rond"></div>
+
+                <div class="Horaire" [ngClass]="{'firefoxTextSize': Navigateur === 'Mozilla'}"> {{i.horaire}} </div>
+                <div class="site" [ngClass]="{'firefoxTextSize': Navigateur === 'Mozilla'}">{{i.site}}</div>     
+
+                <hr style="width:1px; height:57px;" />
+
+        </div>
+    </div>
+
+
+</mat-card>

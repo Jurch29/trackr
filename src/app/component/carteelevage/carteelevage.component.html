@@ -1,0 +1,36 @@
+
+<mat-card>
+
+  <mat-accordion>
+
+      <mat-expansion-panel #level1 *ngFor="let itm of data; let i = index">
+    
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              {{itm.name}}
+          </mat-panel-title>
+          <i class="material-icons" *ngIf="Isediton===true" (click)="Modifier(1)">edit</i>
+        </mat-expansion-panel-header>
+
+        <mat-accordion>
+          <mat-expansion-panel #level2 *ngFor="let itm2 of data[i].data">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      {{itm2.name}}
+                  </mat-panel-title>
+                  <i class="material-icons" *ngIf="Isediton===true" (click)="Modifier(2)">edit</i>
+              </mat-expansion-panel-header>
+
+              <ul *ngFor="let itm3 of data[i].data[i].data">
+                <li>-{{itm3.name}}</li>
+                <i class="material-icons" *ngIf="Isediton===true" (click)="Modifier(3)">edit</i>
+              </ul>
+
+          </mat-expansion-panel>
+        </mat-accordion>
+    
+      </mat-expansion-panel>
+    
+  </mat-accordion>  
+
+</mat-card>

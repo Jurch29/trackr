@@ -1,0 +1,91 @@
+
+mat-card
+{
+    margin-top: 15px;
+    height: 30px;
+    width: 60vw;
+    overflow: visible;
+}
+
+h3
+{
+    position: relative;
+    bottom: 15px;
+}
+
+p
+{
+    color: gray;
+    position: relative;
+    bottom: 22px;
+    font-size: 12px;
+}
+
+.card1 mat-form-field
+{
+    position: relative;
+    top: -82px;
+    left: 70%;
+
+}
+
+.card2 mat-slide-toggle
+{
+    position: relative;
+    top: -65px;
+    left: 70%;
+}
+
+.card3 form
+{
+    position: relative;
+    top: -75px;
+    left: 70%;
+}
+
+.card4 mat-form-field
+{
+    position: relative;
+    top: -82px;
+    left: 70%;
+
+}
+
+.card5 mat-form-field
+{
+    position: relative;
+    top: -82px;
+    left: 70%;
+
+}
+
+@media screen and (max-width: 1350px)
+{
+    mat-card
+    {
+        width: 80vw;
+    }
+    .card2 mat-slide-toggle
+    {
+        position: relative;
+        top: -82px;
+        left: 75%;
+    }
+    .card4
+    {
+        height: 60px;
+    }
+    .card5
+    {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .card4 mat-form-field, .card5 mat-form-field
+    {
+        top: -45px;
+        left: 2%;
+    }
+}

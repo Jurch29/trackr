@@ -1,0 +1,29 @@
+.tabbord
+{
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 90px;
+    width: 665px;
+    /* height: 1500px; */
+}
+
+.title
+{
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    position: relative;
+    left: 20px;
+}
+
+.menu
+{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.Paramcontainer
+{
+    position: relative;
+    top: 130px;
+}

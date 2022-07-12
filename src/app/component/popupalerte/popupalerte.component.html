@@ -1,0 +1,8 @@
+<div class="popup">
+
+  <p>Alertes</p>
+    <div *ngFor="let a of listAlertes">
+        <span><alerte-item [color]="alerttextcolor" [niveau]="a.niveau" [titre]="a.titre" [description]="a.description"></alerte-item></span>
+    </div>
+
+</div>

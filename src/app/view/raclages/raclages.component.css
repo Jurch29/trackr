@@ -1,0 +1,71 @@
+.contenaire
+{
+    margin-top: 50px;
+}
+.title
+{
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    position: relative;
+    left: 90px;
+    top: 50px;
+}
+
+mat-card
+{
+    position: relative;
+    top: 0px;
+    width: 300px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+button
+{
+    position: relative;
+    top: 20px;
+    left: 230px;
+}
+
+.lh
+{
+    display: inline;
+    margin-left: 10px;
+    font-style: oblique;
+}
+
+svg
+{
+    position: relative;
+    bottom: 106px;
+    left: 275px;
+}
+
+svg :hover
+{
+    cursor: pointer;
+    fill: rgb(228, 12, 12);
+}
+
+mat-grid-tile
+{
+    /* background: lightblue; */
+    margin-right: 80px;
+    justify-content: center;
+}
+
+.container
+{
+    position: relative;
+    top: 90px;
+    width: 1260px;
+}
+
+.firefoxEdit
+{
+    position: relative;
+    bottom: 130px;
+    left: 255px;
+}

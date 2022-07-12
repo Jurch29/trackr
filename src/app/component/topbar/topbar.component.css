@@ -1,0 +1,73 @@
+
+.title
+{
+    position: absolute;
+    left: 70px;
+    color: white;
+}
+
+.tbar1
+{
+    background-color: #8BC34A;
+    height: 65px;
+    color: white;
+    font-size: large;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%  !important;
+}
+
+.menugaucheV
+{
+    position: absolute;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    cursor: pointer;
+}
+
+.icon-list
+{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon-list svg
+{
+    margin-right: 10px;
+}
+
+.icon
+{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.tbar1 mat-toolbar-row
+{
+    height: 65px;
+}
+
+svg:hover
+{
+    box-shadow: inset 5em 1em rgb(127, 168, 80);
+}
+
+.flechbckgd
+{
+    width: 40px;
+	height: 40px;
+	background: rgb(127, 168, 80);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: -40px;
+    margin-left: -5px;
+}

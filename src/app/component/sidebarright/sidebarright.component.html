@@ -1,0 +1,37 @@
+
+<mat-sidenav-container>
+    <mat-sidenav>home</mat-sidenav>
+
+            <mat-sidenav-content>
+                <div class="title">
+                    Robots
+                </div>
+
+                <div class="RobotListe">
+
+                    <span *ngFor="let robot of listeRobot; let i = index;">
+
+                        <div [attr.id]="'divL-' + i" class="Robot" on-mouseover='getplacement($event)' (mouseenter) ="mouseEnter(robot.id, i) " (mouseleave) ="mouseLeave('truc2')">
+
+                        <div class="grisage" [attr.id]="'gris-' + i">
+                            <div class="etat">
+                                <div class="rondID"><p>{{robot.id}}</p></div>
+                                <div class="rondetat" [ngStyle]="{background: getColor(robot.id)}"></div>
+                            </div>
+
+                            <div class="description">
+                                <p class="nameR">-----{{robot.name}}-----</p>
+                                <p class="localisationR" [ngClass]="{'firefoxLCL': Navigateur === 'Mozilla'}">----{{robot.localisation}}----</p>
+                            </div>
+                        </div>
+
+                            <popuprobot [idrobottodisplay] = "robot.id" [ngStyle]="{'top': alignement}"></popuprobot>
+
+                        </div>
+
+                    </span>
+
+                </div>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

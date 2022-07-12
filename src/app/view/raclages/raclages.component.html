@@ -1,0 +1,35 @@
+<div class="contenaire">
+    <div class="title">Raclages</div>
+
+    <button mat-raised-button (click)="Addraclage()">Ajouter</button>
+
+    <div class="container" [ngStyle]="{width: getContainerWidth()}">
+        <mat-grid-list [cols]="calcGridColumns()" rowHeight="170px">
+
+            <span *ngFor="let raclage of listeRaclage; let i = index;">
+
+                <mat-grid-tile gutterSize="50px">
+
+                    <mat-card>
+
+                        <p class="lh">{{raclage.salle}}</p>    
+                        <p class="lh">{{raclage.batiment}}</p>
+                        <p class="lh">Site {{raclage.site}}</p>
+
+                        <p class="lm">Nom du robot : {{raclage.robotname}} (ID:{{raclage.robotid}})</p>
+                        <p class="lm">Nombre de cycle de raclage quotidien : {{raclage.frequence}}</p>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" color="black" width="24" height="24" viewBox="0 0 24 24" (click)="clickonedit()" [ngClass]="{'firefoxEdit': Navigateur === 'Mozilla'}">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+
+                    </mat-card>
+
+                </mat-grid-tile>
+
+            </span>
+        </mat-grid-list>
+    </div>
+</div>
+
